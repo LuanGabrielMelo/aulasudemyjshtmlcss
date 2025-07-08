@@ -31,6 +31,6 @@ let partes = equacao.split("=");
 let ladoEsquerdo = partes[0].trim().replace("x", "").replace("+", "").trim();
 let ladoDireito = Number(partes[1].trim());
 let x = ladoDireito - Number(ladoEsquerdo);
-console.log(` separa a icognita da eaquação "x"  fazendo ser x=6-2 `);
+console.log(`separa a incógnita da equação "x"  fazendo assim ser  essa resolução das expressões \n x = ${ladoDireito} - ${ladoEsquerdo}\n x = ${x}`);
 
-console.log("x = " + x);
+
