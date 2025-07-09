@@ -28,9 +28,9 @@ console.log("x = " + x);
 let equacao = "x + 2 = 6";
 console.log(`a expressão ${equacao} é execultada da seguinte forma:`);
 let partes = equacao.split("=");
-let ladoEsquerdo = partes[0].trim().replace("x", "").replace("+", "").trim();
+let ladoEsquerdo = Number (partes[0].trim().replace("x", "").replace("+", "").trim());
 let ladoDireito = Number(partes[1].trim());
-let x = ladoDireito - Number(ladoEsquerdo);
+let x = ladoDireito - ladoEsquerdo;
 console.log(`separa a incógnita da equação "x"  fazendo assim ser  essa resolução das expressões \n x = ${ladoDireito} - ${ladoEsquerdo}\n x = ${x}`);
 
 
