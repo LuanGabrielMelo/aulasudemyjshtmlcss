@@ -9,6 +9,11 @@
 *  ++(operador de incremento)
 * --(operador de decremento)
 * As contas do js são com a mesma definição de execução do operadores em matematica (preferencia a multiplicação, divisão e potenciação(na qual é o de maior priridade))
+pode ocorrer  de o output imprimir o NaN(Not a number) apontandocomo um erro, isso acontece como no seguinte exemplo:
+const num1 = 10;
+const num2 = 'Luiz';
+console.log(num1*num2);
+assim ocorrendo por conta que ele identificou uma string onde deveria ser um numero na operação .
 */
 // const num1 = 10;
 // const num2 = 5;
