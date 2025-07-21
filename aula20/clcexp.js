@@ -34,4 +34,9 @@ let ladoDireito = Number(partes[1].trim());
 let x = ladoDireito - ladoEsquerdo;
 console.log(`separa a incógnita da equação "x"  fazendo assim ser  essa resolução das expressões \n x = ${ladoDireito} - ${ladoEsquerdo}\n x = ${x}`);
 
-
+console.log('valores e tipos da equação resolvida:')
+console.log(`equação :\ntipo: ${typeof equacao}  / valor: ${equacao}`);
+console.log(`Separando por partes:\ntipo: ${typeof partes}  / valor: ${partes}`);
+console.log(`lado esquerdo:\ntipo: ${typeof ladoEsquerdo}  / valor: ${ladoEsquerdo}`);
+console.log(`lado direito:\ntipo: ${typeof ladoDireito}  / valor: ${ladoDireito}`);
+console.log(`valor do resultado do x:\ntipo: ${typeof x}  / valor: ${x}`);
