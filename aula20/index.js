@@ -14,6 +14,10 @@ const num1 = 10;
 const num2 = 'Luiz';
 console.log(num1*num2);
 assim ocorrendo por conta que ele identificou uma string onde deveria ser um numero na operação .
+ex: se colocar o parseInt('5') no seguinte codigo:
+const num1 = 10;
+const num2 = parseInt('5');
+ ele transforma a string '5' e numero  assim fazando a operação e não dando o erro NaN
 */
 // const num1 = 10;
 // const num2 = 5;
