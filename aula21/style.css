@@ -1,3 +1,66 @@
-body{
-    background-color: rgb(60, 61, 55);
+/*body{
+    background-color: rgb(45, 122, 64);
+}
+
+
+.enviar{
+    background-color: #0f3ed8;
+    margin: 5px;
+    box-shadow: 0cqmax 3px 5px rgba(95, 50, 219, 0.2);
+}
+.text{
+    box-shadow: 0 32px 25px rgba(0, 0, 0, 0.2); /* eixo X, Y, blur, cor *
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(238, 6, 6);
+    margin: 12px;
+
+}
+.bloco1{
+    box-shadow: rgba(73, 39, 167, 0.2);
+    background-color: antiquewhite;
+    margin-top: 20%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* ocupa 100% da altura da janela 
+    
+ } */body {
+    background-color: rgb(45, 122, 64);
+    height: 100vh; /* ocupa a altura total da janela */
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar {
+    background-color: #0f3ed8;
+    margin: 5px;
+    box-shadow: 0 3px 5px rgba(95, 50, 219, 0.2); /* corrigido: "0cqmax" era inválido */
+}
+
+.text {
+    box-shadow: 0 32px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(238, 6, 6);
+    margin: 12px;
+}
+
+.bloco1 {
+    box-shadow: 0 10px 20px rgba(73, 39, 167, 0.2); /* corrigido: valor estava incompleto */
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
