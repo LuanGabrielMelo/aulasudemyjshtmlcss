@@ -30,19 +30,18 @@
     height: 90vh; /* ocupa 100% da altura da janela 
     
  } */body {
-    background-color: rgb(45, 122, 64);
+    background-color: rgba(1, 39, 255, 0.829);
     height: 100vh; /* ocupa a altura total da janela */
     margin: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .enviar {
-    background-color: #0f3ed8;
+    background-color: #0f3ed89d;
     margin: 5px;
-    box-shadow: 0 3px 5px rgba(95, 50, 219, 0.2); /* corrigido: "0cqmax" era inválido */
+    box-shadow: 0 3px 5px rgba(66, 2, 241, 0.548); /* corrigido: "0cqmax" era inválido */
 }
 
 .text {
@@ -50,17 +49,21 @@
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 6px;
-    background-color: rgb(238, 6, 6);
+    background-color: rgba(250, 249, 249, 0.466);
     margin: 12px;
 }
 
 .bloco1 {
-    box-shadow: 0 10px 20px rgba(73, 39, 167, 0.2); /* corrigido: valor estava incompleto */
-    background-color: antiquewhite;
+    box-shadow: 10px 10px 10px rgba(255, 2, 2, 0.658); /* corrigido: valor estava incompleto */
+    background-image: url('./image/Escudo-Bahia-2024.jpg');
+    background-size: cover; /* A imagem cobre toda a div */
+    background-position: center; /* A imagem é centralizada */
+    background-repeat: no-repeat; /* A imagem não se repete */
     padding: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
 }
