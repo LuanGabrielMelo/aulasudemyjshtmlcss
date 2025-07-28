@@ -8,3 +8,6 @@ num2 = parseFloat(num2);
 const resultado = num1 +num2 ;
 // console.log(`o resultado da soma dos numeros digitados é : ${resultado}`);
 alert(`o resultado da soma dos numeros digitados  foi: ${resultado}`);
+console.log(num1,num2);
+console.log(resultado);
+console.log(typeof num1,typeof num2, typeof resultado);
