@@ -38,18 +38,29 @@
     align-items: center;
 }
 .bloco1 {
+    width: 200px;
+    height: 400px;
     box-shadow: 10px 10px 10px rgba(255, 2, 2, 0.658); /* corrigido: valor estava incompleto */
     background-image: url('./image/Escudo-Bahia-2024.jpg');
     background-size: cover; /* A imagem cobre toda a div */
     background-position: center; /* A imagem é centralizada */
     background-repeat: no-repeat; /* A imagem não se repete */
+    background-color: #f0ececfd;
+
     padding: 10px;
     border-radius: 10px;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size:x-large;
+    text-shadow: #ffffff;
+    color: rgba(56, 47, 47, 0.863);
 }
 
 .enviar {
