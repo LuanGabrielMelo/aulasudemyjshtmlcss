@@ -11,3 +11,41 @@ alert(`o resultado da soma dos numeros digitados  foi: ${resultado}`);
 console.log(num1,num2);
 console.log(resultado);
 console.log(typeof num1,typeof num2, typeof resultado);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const inserirnome = document.querySelector(".text");
+  const botao = document.querySelector(".enviar");
+  const inputs =document.querySelectorAll("input");
+
+  inserirnome.focus();//focar no input 
+  //validação e suas tratativas do campo :==>
+   botao.addEventListener("click", function () {
+    const nomeDigitado = inserirnome.value; // remove espaços extras
+    const apenasLetras = /^[a-zA-Z]+$/; // Expressão regular para aceitar apenas letras (maiúsculas e minúsculas)
+    if (apenasLetras.test(nomeDigitado)) {
+      console.log("Nome válido:", nomeDigitado);
+      alert("Nome válido:", nomeDigitado);
+    } else {
+      console.log("Erro: digite uma letra, não um número ou caractere inválido.");
+      alert('Erro: digite uma letra, não um número ');
+    }
+  });
+  //tratativa para o proximo campo e suas interações com o teclado :==>
+   inputs.forEach((input, index) => {
+    input.addEventListener("keydown", function (event) {
+      const tecla = event.key;
+      if (tecla === "Backspace") {
+        input.value = input.value.slice(0, -1);
+      }
+      if (tecla === "Enter") {
+        event.preventDefault(); // impede submit padrão
+        if (index < inputs.length - 1) {
+          inputs[index + 1].focus();// vai para o próximo input
+        } else {
+          botao.click();// último campo → clica no botão
+        } 
+      }
+    });
+  });
+  
+});
