@@ -8,25 +8,21 @@
     <body>
         <script>
             const nome = prompt("digite seu nome:");
-            document.body.innerHTML += `o seu nome é: ${nome}<br/>`;
-            document.body.innerHTML += `Seu nome tem ${nome.length} letras<br/>`;
-            document.body.innerHTML += `A segunda letra do seu nome é:${nome[2]}`;
-            document.body.innerHTML += `Qual o primeiro indice da letra A no seu nome?:<b/> o indice é ${nome.indexOf(
-                "a",
-                0
-            )}`;
-            document.body.innerHTML += `Qual o ultimo índice  da letra  A no seu nome?:${nome} `;
-            document.body.innerHTML += `As última 3 letras do seu nome  são:${nome.slice(
-                2,
-                4
-            )} `;
-            document.body.innerHTML += `As palavras  do seu nome são:<b/> `;
-            document.body.innerHTML += `Seu nome com letras maiúsculas:${nome.match(
-                /[A-Z]/g
-            )}`;
-            document.body.innerHTML += `Seu nome com letras minúsculas:${nome.match(
-                /[a-z]/g
-            )}`;
+            document.body.innerHTML += `o seu nome é: <strong>${nome}</strong><br/>`;
+            document.body.innerHTML += `substituindo  a letra A  e E por # fica :<strong>${nome.replace(/[ae]/g,`#`)}</strong><br/>`;
+            document.body.innerHTML += `Seu nome tem <strong>${nome.length} </strong>letras<br/>`;
+            document.body.innerHTML += `A segunda letra do seu nome é:<strong>${nome[1]}</strong><br/>`;
+            //document.body.innerHTML += `A segunda letra do seu nome é:<strong>${nome.charAt(2)}</strong><br/>`; ou assim
+            document.body.innerHTML += `Qual o primeiro indice da letra A no seu nome?:<br/>o indice é<strong> ${nome.indexOf('a')}</strong><br/>`;
+            //document.body.innerHTML += `Qual o primeiro indice da letra A no seu nome?:<br/> o indice é<strong> ${nome.search(/a/)}</strong><br/>`;
+            document.body.innerHTML += `Qual o ultimo índice  da letra  A no seu nome?:<br/>o indice é<strong> ${nome.lastIndexOf('a')}</strong><br/> `;
+            //document.body.innerHTML += `Qual o ultimo índice  da letra  A no seu nome?:<strong>${nome.search(/a/)}</strong><br/> `;
+            document.body.innerHTML += `As última 3 letras do seu nome  são:<strong>${nome.slice(-3)}</strong> <br/>`;
+            document.body.innerHTML += `As palavras  do seu nome são:<strong>${nome.split(' ')}</strong><br/>`;
+            document.body.innerHTML += `Letras maiúsculas do seu nome:<strong>${nome.match(/[A-Z]/g)}</strong><br/>`;
+            document.body.innerHTML += `Letras minúsculas do seu nome :<strong>${nome.match(/[a-z]/g)}</strong><br/>`;
+            document.body.innerHTML += `Seu nome com letras maiúsculas:<strong>${nome.toUpperCase()}</strong><br/>`;
+            document.body.innerHTML += `Seu nome com letras minúsculas:<strong>${nome.toLowerCase()}</strong><br/>`;
             console.log(nome);
         </script>
     </body>
