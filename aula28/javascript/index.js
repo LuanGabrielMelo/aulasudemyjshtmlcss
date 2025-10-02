@@ -15,13 +15,12 @@ if (confirm("Você tem certeza?")) {
 // Prompt de entrada
 let nome = prompt("Qual é o seu nome?");
 alert(`Olá, ${nome}!`); */
-prompt('digite seu numero :');
-let numero = prompt;
-prompt = numero;
+const numero = prompt('Digite um número:');
+const numeroTitulo = document.getElementById('numero-titulo');
 let raiz = (numero**(1/2));
 
+/*pode ser feito assim tbm  n propio js 
 document.body.innerHTML=`
 <h1> Seu numero é  ${numero} </h1>
 Raiz quadrada: ${raiz}
-
-`
+`*/
